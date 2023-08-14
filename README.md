@@ -6,15 +6,19 @@ This repository is Container of Python Development Environment for Training.
 
 ### Docker container build
 
-`docker build -t container_of_python_dev_env_for_training .`
+`docker build -t container_of_python_dev_env_for_training:latest .`
 
-### Docker container run
+### Docker container create
 
-`docker run --name container_of_python_dev_env_for_training --rm -d -p 8080:8080 container_of_python_dev_env_for_training`
+`docker container create -it --name container_of_python_dev_env_for_training container_of_python_dev_env_for_training:latest /bin/bash`
 
-### Docker container stop and remove
+### Docker container start
 
-`docker stop container_of_python_dev_env_for_training`
+`docker container start -ai container_of_python_dev_env_for_training`
+
+### Docker container remove
+
+`docker container remove container_of_python_dev_env_for_training`
 
 ### Docker image remove
 
